@@ -5,7 +5,7 @@
 body{
     height: 100vh;
     margin: 0px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(216, 224, 241, 0.3)), url("dolares.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(216, 224, 241, 0.3)), url("img/dolares.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -71,14 +71,14 @@ button:hover {
 #listaImagenes{
     text-align: center;
     width: 100vw;
-    max-width: 600px;
+    max-width: 650px;
 }
 
 img {
     border: 1px solid white;
     border-radius: 2px;
     padding: 0px;
-    width: 138px;
+    width: 151px;
     height: 70px;
     background: white;
 }
