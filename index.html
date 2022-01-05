@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Cajero Automatico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@800&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="content">
+        <div class="encabezado">
+            <h1 class="texto1">ATM</h1>
+        </div>
+
+        <div id="login">
+            <p class="texto"></i>Ingrese su Usuario</p>
+            <i class="fa fa-user"></i> <input id="usuario" type="text" autocomplete="off" placeholder="Username"><br><br>
+            <p class="texto">Ingrese su Contraseña</p>
+            <i class="fas fa-key"></i> <input id="pass" autocomplete="off" type="password" placeholder="Password"><br><br>
+            <button type="submit" onclick="autenticar();">INICIAR SESION</button>
+        </div>
+
+        <div id="opciones">
+            <p id="nombreUsuario"></p><br><br>
+            <button onclick="consultar();"> CONSULTAR SALDO </button>
+            <button onclick="ingresarMonto();">DEPOSITAR</button>
+            <button onclick="retirarMonto();">RETIRAR</button>
+            <button onclick="salir();">SALIR</button>
+        </div>
+
+        <div id="saldoActual">
+            <p id="saldo"></p><br><br>
+            <button onclick="volver();">REGRESAR</button>
+            <button onclick="salir();">SALIR</button>
+        </div>
+
+        <div id="ingresarCantidad">
+            <p>Monto nuevo que desea depositar: </p>
+            <input id="cant" autocomplete="off"><br><br>
+            <button onclick="validarMonto();">DEPOSITAR</button>
+            <button onclick="volver();">Regresar</button>
+            <button onclick="salir();">Salir</button>
+        </div>
+
+        <div id="nuevoMonto">
+            <p id="saldoNuevo"></p><br>
+            <button onclick="volver();">Regresar</button>
+        </div>
+
+        <div id="retirarCantidad">
+            <p>Monto que desea retirar: </p>
+            <input id="cantRetiro" autocomplete="off"><br><br>
+            <button onclick="validarMontoRetiro();">Retirar</button>
+            <button onclick="volver();">Regresar</button>
+            <button onclick="salir();">Salir</button>
+        </div>
+    </div>
+    <div id="listaImagenes">
+        <img src="americane.png">
+        <img src="visa.png">
+        <img src="diners.png">
+        <img src="mastercard.png">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
